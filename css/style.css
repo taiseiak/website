@@ -94,6 +94,9 @@ hr.small {
     padding-left: 0px;
     padding-right: 0px;
 }
+.carousel-img img {
+    min-height: 200px;
+}
 
 
 
