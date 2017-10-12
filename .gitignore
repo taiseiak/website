@@ -1,0 +1,9 @@
+# Files to ignore
+.idea/markdown-navigator/
+.idea/misc.xml
+.idea/modules.xml
+.idea/website.iml
+.idea/workspace.xml
+.idea/inspectionProfiles
+.idea/markdown-navigator.xml
+.idea/vcs.xml
