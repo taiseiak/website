@@ -149,15 +149,6 @@ hr.small {
 }
 
 
-/* Call to Action */
-
-.call-to-action {
-  padding: 50px 0;
-}
-
-.call-to-action .btn {
-  margin: 10px;
-}
 
 
 
@@ -165,14 +156,4 @@ hr.small {
 
 footer {
   padding: 25px 0;
-}
-
-
-#to-top {
-  font-size: 1em;
-  position: fixed;
-  right: 5px;
-  bottom: 5px;
-  display: none;
-  padding: 15px 20px;
 }
