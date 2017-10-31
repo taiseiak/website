@@ -2,3 +2,4 @@ Flask
 pyopenssl
 geocoder
 gunicorn
+configparser
