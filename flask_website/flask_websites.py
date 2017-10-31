@@ -6,7 +6,7 @@ import flask
 import config
 from flask import request
 import logging
-import geocoder
+# import geocoder
 import requests
 
 # Globals
@@ -67,13 +67,13 @@ def setup_map():
     return flask.jsonify(result=information)
 
 
-# Geocoding
+""""# Geocoding
 @app.route("/_get_addy")
 def get_addy():
-    """
+
     With an input of latitude and longitude, sends a
     JSON file with the information of the address.
-    """
+
     app.logger.debug("Got JSON request")
     lat = request.args.get('lat', type=float)
     lng = request.args.get('lng', type=float)
@@ -83,7 +83,7 @@ def get_addy():
 
     g = geocoder.google([lat, lng], method='reverse')
     app.logger.debug("g.json: {}".format(g.json))
-    return flask.jsonify(result=g.json)
+    return flask.jsonify(result=g.json)"""
 
 
 @app.route("/_get_poi")
@@ -94,15 +94,11 @@ def get_poi():
     """
     lat = request.args.get('lat', type=float)
     lng = request.args.get('lng', type=float)
-    url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     location = "{},{}".format(lat, lng)
-    params = {"key": CONFIG.GOOGLE_KEY,
-              "location": location,
-              "radius": CONFIG.RADIUS,
-              "keyword": CONFIG.FIND}
+    url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?key={}&location={}&radius={}&keyword={}".format(
+        CONFIG.GOOGLE_KEY, location, CONFIG.RADIUS,  CONFIG.FIND)
     # Requests encodes the comma with percent so a work around for that problem
-    params_str = "&".join("{}={}".format(k, v) for k, v in params.items())
-    r = requests.get(url, params=params_str)
+    r = requests.get(url)
     return flask.jsonify(r.json()['results'])
 
 

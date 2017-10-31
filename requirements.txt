@@ -1,5 +1,5 @@
 Flask
 pyopenssl
-geocoder
 gunicorn
 configparser
+requests
