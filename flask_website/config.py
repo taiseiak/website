@@ -84,7 +84,7 @@ def config_file_args(config_file_paths, project=None):
     return args
 
 
-def imply_types(ns: dict):
+def imply_types(ns):
     """Convert values to implied types.  We assume that strings of
     digits should be integers, and True/False (with any casing) should
     be boolean. """
