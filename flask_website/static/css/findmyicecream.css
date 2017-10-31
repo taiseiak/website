@@ -1,0 +1,13 @@
+/*css stylesheet for the home page*/
+
+/* Map */
+
+#map {
+    height: 500px;
+}
+
+/* Footer */
+
+footer {
+  padding: 30px 0;
+}

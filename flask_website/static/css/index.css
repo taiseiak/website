@@ -1,0 +1,43 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.top-link {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.top-link:hover, .top-link:active {
+    color: rgba(255, 0, 0, 0.7);
+}
+
+.icons {
+    color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+}
+
+b {
+    color: #000;
+}
+
+.experience {
+    padding: 30px;
+}
+
+.major {
+    color: rgba(230, 0, 0, 0.7);
+}
+
+code {
+    background-color: rgba(0, 0, 0, 0.04);
+    color: rgba(230, 0, 0, 0.7);
+}
+
+.s_icons {
+    padding: 30px;
+    font-family: Futura;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    padding: 50px;
+}

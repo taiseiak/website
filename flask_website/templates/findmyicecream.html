@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>find my {{g.topic}}</title>
+
+    <!--leaflet css-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+
+    <!--leaflet JavaScript-->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+
+    <!--MapBox cdn-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!--Bootstrap cdn-->
+    <!--Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <!-- Compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+    <!--custom css stylesheet-->
+    <link rel="stylesheet" href="/static/css/findmyicecream.css"/>
+
+    <!--Bootstrap setup-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+    <!--Title-->
+    <div class="container">
+        <h1 class="display-3">find my {{g.topic}}</h1>
+        <p class="text-secondary">find the nearest {{g.topic}} near you</p>
+
+        <!--Map-->
+        <div id='map'></div>
+        <script type="text/javascript" src="/static/js/map.js"></script>
+
+        <!--Footer-->
+        <footer>
+            <div id="footer-content">
+                <div class="col-md-4 text-right">
+                    <small>&copy; 2017, Taisei Klasen </small>
+                </div>
+            </div>
+        </footer>
+    </div> <!--end container-->
+
+</body>
+</html>
